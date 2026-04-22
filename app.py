@@ -26,7 +26,7 @@ import pickle
 
 """# 3. Data Loading and Exploration
 
-Loading the data set "customer_churn.csv" and looking how the data set looks and checking the quality of the dataset.
+Loading the data set "Customertravel.csv" and looking how the data set looks and checking the quality of the dataset.
 """
 
 df = pd.read_csv('Customertravel.csv')
