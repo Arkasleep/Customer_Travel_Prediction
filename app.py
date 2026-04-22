@@ -6,7 +6,7 @@ import seaborn as sns
 import pickle
 from sklearn.metrics import roc_curve, auc
 
-# --- 1. Introduction (Requirement #1) ---
+# --- 1. Introduction ---
 st.set_page_config(page_title="Customer Travel Churn", layout="wide")
 st.title("Project: Customer Travel Churn Prediction")
 st.info("""
@@ -45,14 +45,14 @@ def user_input():
 
 input_df = user_input()
 
-# --- 4. Prediction (Requirement #5) ---
+# --- 4. Prediction (---
 st.subheader("Prediction Result")
 if st.button("Run Model"):
     prediction = my_model.predict(input_df)
     result = "CHURN (Will Leave)" if prediction[0] == 1 else "STAY (Will Remain)"
     st.write(f"### The predicted status is: **{result}**")
 
-# --- 5. Visualizations & Evaluation (Requirement #6 & #7) ---
+# --- 5. Visualizations & Evaluation ---
 st.markdown("---")
 st.subheader("Model Evaluation & Visuals")
 col1, col2 = st.columns(2)
@@ -64,7 +64,7 @@ with col1:
     st.pyplot(fig1)
 
 with col2:
-    st.write("**Model Conclusion (Requirement #8)**")
+    st.write("**Model Conclusion **")
     st.success("""
     - **Key Driver:** Age and Income Class are the strongest predictors.
     - **Performance:** Random Forest provides a balanced accuracy.
