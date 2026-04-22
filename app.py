@@ -64,7 +64,7 @@ with col1:
     st.pyplot(fig1)
 
 with col2:
-    st.write("**Model Conclusion **")
+    st.write("Model Conclusion")
     st.success("""
     - **Key Driver:** Age and Income Class are the strongest predictors.
     - **Performance:** Random Forest provides a balanced accuracy.
