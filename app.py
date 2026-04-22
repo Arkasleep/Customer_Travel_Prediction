@@ -29,7 +29,7 @@ import pickle
 Loading the data set "customer_churn.csv" and looking how the data set looks and checking the quality of the dataset.
 """
 
-df = pd.read_csv('/content/Customertravel.csv')
+df = pd.read_csv('Customertravel.csv')
 
 # Checking the first few rows
 print(df.head())
